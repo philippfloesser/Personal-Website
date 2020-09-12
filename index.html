@@ -6,19 +6,47 @@
 
         <link rel ="icon" href ="images/p.png" type = "image/x-icon">
         <link href="css/style.css" rel="stylesheet">
-
   </head>
 
   <body>
 
-    <div class="navbar">
-      <img class="logo"src="images/p.png">
+    <header>
+      <div class="header">
+        <a href="https://philippfloesser.com"><img class="logo"src="images/p.png"></a>
+
+        <nav>
+          <ul>
+            <li><a href="#" class="button">Home</a></li>
+            <li><a href="#" class="button">Blog</a></li>
+            <li><a href="#" class="button">About</a></li>
+            <li><a href="#" class="button">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <div class="banner">
+      <img class="banner-image"src="images/map-edit.jpg">
+        <div class="banner-content">
+          <img class="profile" src="images/profile-crop2.jpg">
+          <h1>I am Philipp Floesser</h1>
+          <!-- <p>And I'm this is my website</p> -->
+        </div>
     </div>
 
-    <img class="header" src="images/washington-crop.jpg">
+    <!-- <div class="banner">
+      <img class="banner-image" src="images/map.jpg">
+        <img class="profile" src="images/profile-crop.jpg">
+        <h1>Hello,</h1>
+        <p>Welcome to <strong>PhilippFloesser.com</strong>, a website slow-cooked in our signiature blend of herbs and spices to bring you the most mouthwatering
+          experience possible.</p>
+    </div> -->
 
     <h1>Hello,</h1>
-    <p>Welcome to <strong>PhilippFloesser.com</strong>, a website slow-cooked in our signiature blend of herbs and spices to bring you the most mouthwatering experience possible.</p>
+    <p>Welcome to <strong>PhilippFloesser.com</strong>, a website slow-cooked in our signiature blend of herbs and spices to bring you the most mouthwatering
+      experience possible. Unfortunately this website is under construction at the moment. Please check back at a later date for more content.</p>
+    <img class="construction" src="images/under-construction.gif">
     <p>
       This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
       Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
@@ -38,10 +66,90 @@
       Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
     </p>
 
-    <!--<p><a href="file:///C:/Users/phiro/Desktop/Personal-Website-master/Personal-Website-master/cookbook.html">Cookbook</a></p>-->
+    <div class="aside">
+      <h1><u>FAQ's</u><h1>
+      <h2>This is placeholder text</h2>
+      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
+      <h2>This is placeholder text</h2>
+      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
+      <h2>This is placeholder text</h2>
+      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
+    </div>
 
-    <div class="footer">© Copyright 2020 Philipp Floesser</div>
+    <!-- <div class="aside">
+      <h1><u>FAQ's</u><h1>
+      <h2>Why does this website exist?</h2>
+      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
+      <h2>Where can I find your résumé?</h2>
+      <p>Most information about me can be found on the <u>About</u> page. If you would like a formal copy of my résumé please email me at PhilFloesser@gmail.com.</p>
+      <h2>What is the exchange rate of PhilBux to USD?</h2>
+      <p>Unfortunately, as PhilBux are not found in circulation anywhere except for this website, most banks do not recognize them as a standard medium of exchange. However, this website <i>does</i> accept them. Please visit the <u>Store</u> to spend yours.</p>
+    </div> -->
 
-  </body>
+    <p>
+      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+    </p>
+    <p>
+      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
+      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+    </p>
+
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<div class="footer">© Copyright 2020 Philipp Floesser</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>there will be content here at some point</p>
+  </div>
+
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+    </body>
 </html>
 
