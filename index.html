@@ -1,154 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178814934-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-178814934-1');
+    </script>
+
     <meta charset="utf-8">
     <title>Home | Philipp Floesser</title>
 
         <link rel ="icon" href ="images/p.png" type = "image/x-icon">
         <link href="css/style.css" rel="stylesheet">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        </style>
   </head>
 
   <body>
 
-    <header>
-      <div class="header">
-        <a href="https://philippfloesser.com"><img class="logo"src="images/p.png"></a>
-
-        <nav>
-          <ul>
-            <li><a href="#" class="button">Home</a></li>
-            <li><a href="#" class="button">Blog</a></li>
-            <li><a href="#" class="button">About</a></li>
-            <li><a href="#" class="button">Contact</a></li>
-          </ul>
-        </nav>
-
-      </div>
-    </header>
-
-    <div class="banner">
+    <div class="banner" id="home">
       <img class="banner-image"src="images/map-edit.jpg">
         <div class="banner-content">
-          <img class="profile" src="images/profile-crop2.jpg">
-          <h1>I am Philipp Floesser</h1>
-          <!-- <p>And I'm this is my website</p> -->
+          <img class="profile" src="images/profile-crop2.jpg" alt="Profile picture" title="yes, this is me">
+          <div class="title">
+            <h1>Hi, I'm Philipp Floesser</h1>
+          </div>
         </div>
+        <header>
+          <div class="header">
+            <a href="https://philippfloesser.com"><img class="logo"src="images/p.png"></a>
+            <nav>
+              <ul>
+                <li><a href="uploads/Philipp Floesser Resume.pdf" target="_blank" class="button">resume</a></li>
+                <li><a href="#spotlight" class="button">spotlight</a></li>
+                <li><a href="#certifs" class="button">certifications</a></li>
+                <li><a href="#contact" class="button">contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+    <div class="intro">
+    <p class="intro-top">
+      Slow-cooked in our signature blend of herbs and spices, <strong>PhilippFloesser.com</strong> is a website perfect for any occasion. It is home to a variety of content including (but not limited to) recent project showcases, certifications I’ve received, and general biographical information. Currently, I’m a senior at Auburn University studying Supply Chain Management and will be graduating in May 2021. As such I am looking for full time employment opportunities to continue learning and developing the skills I have gained both from my academic and work-related experiences.
+    </p>
+    <p>
+    Last fall I completed an internship in the procurement department of Powerteq (a high-performance aftermarket automotive company) but over the last several years I have worked in a range of industries from front-end development to theater production. Needless to say, I like to keep an open mind regarding the kinds of work I'm involved in. If there’s one thing I’ve learned, it’s to avoid preconceived notions because more often than not you’ll be pleasantly surprised by things which you need only give a chance.
+    </p>
+
+    <blockquote class="blockquote-top">
+    <h4>Making an un-perfect decision is far, far better than not making a decision, which is the worst possible decision you could make.</h4>
+    <p>- Hank Green</p>
+    </blockquote>
+
+    <p>
+      Recently I've become interested in the field of Data Science and have been working on tailoring my skill set to combine both the technical expertise of data engineers/data scientists with the operational expertise of supply chain, manufacturing, and other frontline managers. As we trek further into the information age, business acumen is increasingly tied to domains like big data, statistics, advanced computing, and visualization tech. I think that taking this interdisciplinary approach is the best way to drive change of any kind, and hope you’ll give me the chance to do just that for you or your company.
+    </p>
+    <p class="intro-bottom">
+      I am always willing and open to connect, so please reach out! If you would like to set up an interview, ask me a question, or just talk, e-mail is the best way to get in touch, but my LinkedIn is at the bottom of this page as well. A copy of my <a href="uploads/Philipp Floesser Resume.pdf" target="_blank"><strong>Professional Resume</strong></a> is also available if you would like to assess whether my skills and experience could make me a good fit for your team.
+    </p>
     </div>
 
-    <!-- <div class="banner">
-      <img class="banner-image" src="images/map.jpg">
-        <img class="profile" src="images/profile-crop.jpg">
-        <h1>Hello,</h1>
-        <p>Welcome to <strong>PhilippFloesser.com</strong>, a website slow-cooked in our signiature blend of herbs and spices to bring you the most mouthwatering
-          experience possible.</p>
-    </div> -->
+    <div class="project_text" id="spotlight">
+      <h1 class="project-header">Project Spotlight</h1>
+        <h3>
+          This project is based on a case study involving the allocation of medical linear accelerators (Linacs) to cancer treatment facilities in Ontario, Canada over a five-year period.
+        </h3>
+        <p>
+          Linacs are commonly used in radiation therapy either as a curative treatment, to alleviate symptoms, or extend/improve quality of life. By customizing high energy x-rays or electrons to conform to a tumor's shape, the goal is to destroy cancer cells while minimizing damage to the surrounding normal tissue. Approximately half of cancer patients require radiation therapy at least once during the course of their illness, many requiring repeat treatments.
+        </p>
+        <p>
+          To meet the high demand for radiation treatment in Ontario, Cancer Care Ontario (CCO) launched a strategy which outlined recommendations for investments in linacs. A single linac can, on average, treat 426 patients per year. Several problems are associated with insufficient capacity: some patients may receive no treatment or may not receive it in a timely manner, patients may be required to travel to distant cancer centers at high personal cost, and some patients may be required to substitute other treatments that are not as effective as radiation therapy in their condition. Radiation therapy is often cost-effective but requires high initial investment. The capital resources and implementation timelines for the construction of new facilities were not realistic to meet current or near future demand. As such, CCO decided to fill current facilities before investing in new ones.
+        </p>
+        <p>
+          The facilities have three types of rooms: “treatment rooms” which are currently occupied by a linac, “empty rooms” which have been allocated for future expansion but aren’t currently in use, and “swing rooms” which are empty rooms typically used for equipment replacement. Once a linac has been installed it cannot be moved (excepting two portable linacs which CCO owns). Ideally empty rooms should be filled before swing rooms to maximize use of swing rooms for equipment replacement. Demand forecasts for radiotherapy were calculated based on the projected growth in cancer incidence across the province. Based on current system capacity, Ontario has a total of 16 empty or swing rooms that can potentially be filled with linacs over the next 5 years. Based on forecasted demand, the recommended allocation was as follows: 4 linacs in 2013, 3 linacs in 2014, 5 linacs in 2015, 2 linacs in 2016, 2 linacs in 2017. By 2018 CCO will run out of capacity and will require additional capital investments to build a new treatment facility.
+        </p>
+        <p>
+          My goal was to devise a strategy to allocate linacs to available rooms/facilities in a way that ensured quality radiation treatment to all patients across the province. In other words, I wanted to create a quantitative plan to meet demand, given the available resources and constraints. I determined the best route would be to optimize the ratio of patients per linac across all facilities (using Excel and an add-in called Solver) in order to provide a non-biased and data driven plan. Here are the results:
+         </p>
 
-    <h1>Hello,</h1>
-    <p>Slow-cooked in our signiature blend of herbs and spices, <strong>PhilippFloesser.com</strong> is a website perfect for any occasion. Unfortunately it is also under construction at the moment. Please check back at a later date for more content.</p>
-    <img class="construction" src="images/under-construction.gif">
-    <p>
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-    </p>
-    <p>
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-    </p>
+        <iframe width="100%" height="550px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=1B95866A4A6C39BE%2110807&authkey=%21AEvyBJxaCKSqsvA&em=2&wdAllowInteractivity=False&ActiveCell='Starting%20Info'!A3&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
 
-    <div class="aside">
-      <h1><u>FAQ's</u><h1>
-      <h2>This is placeholder text</h2>
-      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
-      <h2>This is placeholder text</h2>
-      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
-      <h2>This is placeholder text</h2>
-      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
+        <p>
+          The first page shows both the starting information which was relevant for meeting my goal (in blue), as well as the final allocation plan (in green) based on the calculated results. You can see in the yellow columns on pages 2013-2017 how allocation was optimized to best meet demand for that specific year. If you scroll down you can also see the formulas I used in Solver to account for capacity constraints and set the goal.
+        </p>
+
     </div>
 
-    <!-- <div class="aside">
-      <h1><u>FAQ's</u><h1>
-      <h2>Why does this website exist?</h2>
-      <p>This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.</p>
-      <h2>Where can I find your résumé?</h2>
-      <p>Most information about me can be found on the <u>About</u> page. If you would like a formal copy of my résumé please email me at PhilFloesser@gmail.com.</p>
-      <h2>What is the exchange rate of PhilBux to USD?</h2>
-      <p>Unfortunately, as PhilBux are not found in circulation anywhere except for this website, most banks do not recognize them as a standard medium of exchange. However, this website <i>does</i> accept them. Please visit the <u>Store</u> to spend yours.</p>
+    <div>
+    <p class="text-general">
+      Outside of school and throughout quarantine I’ve been taking advantage of free online learning resources like Khan Academy and Coursera. One resource which has been incredibly helpful is CognitiveClass.ai, IBM's Developer Skills program. Through it I've been able to earn professional certificates for successfully completing and passing courses like Data Science Methodology, Mathematical Optimization for Business Problems, and SQL and Relational Databases. They provide many more useful certifications and I recommend their courses to anyone with some extra free time and an interest in data science. You can see some of my earned certificates below.
+    </p>
+    </div>
+
+    <div class="certification" id="certifs">
+      <h1> Certifications</h1>
+      <div class="carousel-container">
+        <div class="carousel-inner">
+          <div class="track">
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Big Data 101.png">
+                <div class="info">
+                  <a href="uploads/Big Data 101.pdf" target="_blank">Big Data 101</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Data Science Methodology.png">
+                <div class="info">
+                  <a href="uploads/Data Science Methodology.pdf" target="_blank">Data Science Methodology</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Deep Learning with TensorFlow.png">
+                <div class="info">
+                  <a href="uploads/Deep Learning with TensorFlow.pdf" target="_blank">Deep Learning w/TensorFlow</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Exploring Spark's GraphX.png">
+                <div class="info">
+                  <a href="uploads/Exploring Spark's GraphX.pdf" target="_blank">Exploring Spark's GraphX</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Hadoop 101.png">
+                <div class="info">
+                  <a href="uploads/Hadoop 101.pdf" target="_blank">Hadoop 101</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/How to Build Chatbots.png">
+                <div class="info">
+                  <a href="uploads/How to Build Chatbots.pdf" target="_blank">How to Build Chatbots</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Introduction to Data Science.png">
+                <div class="info">
+                <a href="uploads/Introduction to Data Science.pdf" target="_blank">  Introduction to Data Science</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Mathematical Optimization for Business Problems.png">
+                <div class="info">
+                  <a href="uploads/Mathematical Optimization for Business Problems.pdf" target="_blank">Mathematical Optimization</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Moving Data into Hadoop.png">
+                <div class="info">
+                  <a href="uploads/Moving Data into Hadoop.pdf" target="_blank">Moving Data into Hadoop</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/NoSQL and DBaaS.png">
+                <div class="info">
+                  <a href="uploads/NoSQL and DBaaS.pdf" target="_blank">NoSQL and DBaaS</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Predictive Modeling Fundamentals I.png">
+                <div class="info">
+                  <a href="uploads/Predictive Modeling Fundamentals I.pdf" target="_blank">Predictive Modeling</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Reactive Architecture- Introduction to Reactive Systems.png">
+                <div class="info">
+                  <a href="uploads/Reactive Architecture- Introduction to Reactive Systems.pdf" target="_blank">Reactive Architecture</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/SQL and Relational Databases 101.png">
+                <div class="info">
+                  <a href="uploads/SQL and Relational Databases 101.pdf" target="_blank">SQL and Relational Databases</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img class="img" src="images/certificates/Using HBase for Real-time Access to your Big Data.png">
+                <div class="info">
+                  <a href="uploads/Using HBase for Real-time Access to your Big Data.pdf" target="_blank">Using HBase for Big Data</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <button class="prev">
+            <i class="material-icons">
+            ←
+            </i>
+          </button>
+          <button class="next">
+            <i class="material-icons">
+            →
+            </i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const prev  = document.querySelector('.prev');
+      const next = document.querySelector('.next');
+
+      const track = document.querySelector('.track');
+
+      let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+
+      window.addEventListener('resize', () => {
+        carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+      })
+
+      let index = 0;
+
+      next.addEventListener('click', () => {
+        index++;
+        prev.classList.add('show');
+        track.style.transform = `translateX(-${index * carouselWidth}px)`;
+
+        if (track.offsetWidth - (index * carouselWidth) < carouselWidth) {
+          next.classList.add('hide');
+        }
+      })
+
+      prev.addEventListener('click', () => {
+        index--;
+        next.classList.remove('hide');
+        if (index === 0) {
+          prev.classList.remove('show');
+        }
+        track.style.transform = `translateX(-${index * carouselWidth}px)`;
+      })
+    </script>
+
+    <!-- <div class="intro">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
     </div> -->
 
+    <div class="contact">
+    <h1 id="contact">
+      Contact
+    </h1>
     <p>
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
+      Festina Lente -- “ make haste slowly ”
     </p>
-    <p>
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-      This is placeholder text; its purpose is to assess how this webpage will look once there is actual content here but for now it holds no meaning.
-      Imagine that it says something thought provoking and silently nod in agreement as you look pensively at your monitor.
-    </p>
+    <a href="mailto:prf0005@auburn.edu">prf0005@auburn.edu</a>
+    <a href="https://linkedin.com/in/philippfloesser/" target="_blank">linkedin.com/in/philippfloesser</a>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2020 Philipp Floesser</p>
+    </div>
 
-    <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<div class="footer">© Copyright 2020 Philipp Floesser</div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>there will be content here at some point</p>
-  </div>
-
-  <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-    </body>
+  </body>
 </html>
-
