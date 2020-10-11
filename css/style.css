@@ -458,16 +458,16 @@ margin-top: 20px;
 margin-bottom:30px;
 }
 .column h2,p{
-	text-align:center;
+text-align:center;
 }
 .badge{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
 }
 .badge a{
-	display: inline-table;
+display: inline-table;
 }
 
 .row:after {
