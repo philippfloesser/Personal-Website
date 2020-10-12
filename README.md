@@ -1,4 +1,4 @@
 Personal Website
 ==============
 
-*can i get uuuh website*
+*This is a repo for my personal website*
