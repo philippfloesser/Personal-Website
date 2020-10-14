@@ -190,7 +190,7 @@ blockquote h4{
 	font-weight: 3;
 }
 blockquote h4:before{
-  color: #7C606B;
+  color: #1c6269;
   content: open-quote;
   font-size: 3em;
   line-height: 0.1em;
@@ -198,7 +198,7 @@ blockquote h4:before{
   vertical-align: -0.4em;
 }
 blockquote h4:after {
-  color: #7C606B;
+  color: #1c6269;
   content: close-quote;
   font-size: 3em;
   line-height: 0.1em;
