@@ -276,6 +276,16 @@ blockquote p{
 	padding-top:20px;
 	font-weight:1;
 }
+.contact h1:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom:30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b5b1a5;
+}
 .contact p{
 	color: #b5b1a5;
 	text-align: center;
