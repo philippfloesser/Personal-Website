@@ -137,6 +137,9 @@ body {
 	text-indent: 2em;
 	line-height: 1.6;
 }
+@media only screen and (max-width: 1000px) {
+  .text-general{padding-left:5%; padding-right:5%;}
+}
 
 .intro h1{
 	font-size: 2.5em;
@@ -149,6 +152,9 @@ padding-right:20%;
 text-align: left;
 text-indent: 2em;
 line-height: 1.6;
+}
+@media only screen and (max-width: 1000px) {
+  .intro p{padding-left:5%; padding-right:5%;}
 }
 .intro-top{
 	margin-top:50px;
